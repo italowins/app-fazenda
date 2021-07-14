@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* começa aqui */
+
+a img {
+    width: 30rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+header {
+    background-color: var(--blue);
+    padding: 1em;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 0.5em;
+}
+
+section article {
+    border-radius: 20px;
+    /* border: 1px solid var(--light-blue); */
+    border: .2rem solid var(--blue);
+    margin: 0.5em;
+    /* background-color: var(--grey-light); */
+    margin-bottom: 30px;
+}
+
+section article img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+section article h2 {
+    color: var(--blue);
+    margin: 0.5em;
+}
+
+section article p {
+    color: grey;
+    margin: 0.5em;
+}
+
+footer {
+    background-color: var(--blue);
+    padding: 1.5em 0.5em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer p {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+
+/*Outros Tamanhos*/
+
+@media screen and (min-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+        width: 1000px;
+        margin: auto;
+    }
+}
